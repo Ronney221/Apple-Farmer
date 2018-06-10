@@ -12,7 +12,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    var money = 1000;
+    var money = 0;
 
     var appleCost = 1
     var appleIncrement = 1

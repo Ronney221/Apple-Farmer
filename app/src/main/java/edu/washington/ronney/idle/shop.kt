@@ -61,15 +61,19 @@ class shop : AppCompatActivity() {
         val buyTree = findViewById<Button>(R.id.buyTree)
         val buyFarm = findViewById<Button>(R.id.buyFarm)
 
-        applePS.setText(Integer.toString(applePerSecond) + " Apples/sec")
+        if (boughtApple) {
+            applePS.setText(Integer.toString(applePerSecond) + " Apples/sec")
+        }
         apsCost.setText("$" + applePerSecondCost)
 
-
-        treePS.setText(Integer.toString(treePerSecond) + " Apples/sec")
+        if (boughtTree) {
+            treePS.setText(Integer.toString(treePerSecond) + " Apples/sec")
+        }
         atpsCost.setText("$" + treePerSecondCost)
 
-
-        farmPS.setText(Integer.toString(farmPerSecond) + " Apples/sec")
+        if (boughtFarm) {
+            farmPS.setText(Integer.toString(farmPerSecond) + " Apples/sec")
+        }
         afpsCost.setText("$" + farmPerSecondCost)
 
         apples.setText("Apples: " + money)
