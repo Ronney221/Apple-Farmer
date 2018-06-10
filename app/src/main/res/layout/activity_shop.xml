@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80ffff"
+    tools:context=".shop">
+
+    <TextView
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="STORE"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="104dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buyAPS"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:text="Apple"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apples" />
+
+    <Button
+        android:id="@+id/appleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:enabled="false"
+        android:text="AUTOMATE"
+        app:layout_constraintEnd_toStartOf="@+id/apsCost"
+        app:layout_constraintStart_toEndOf="@+id/buyAPS"
+        app:layout_constraintTop_toBottomOf="@+id/store" />
+
+    <TextView
+        android:id="@+id/apsCost"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="200dp"
+        android:text="$10"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appleButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shopBack"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buyATPS"
+        android:layout_width="132dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Apple Tree"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyAPS" />
+
+    <TextView
+        android:id="@+id/buyAFPS"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Apple Farm"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyATPS" />
+
+    <Button
+        android:id="@+id/buyTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="31dp"
+        android:text="PURCHASE"
+        android:enabled="false"
+        app:layout_constraintStart_toEndOf="@+id/buyATPS"
+        app:layout_constraintTop_toBottomOf="@+id/appleButton" />
+
+    <Button
+        android:id="@+id/treeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="31dp"
+        android:enabled="false"
+        android:text="AUTOMATE"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/buyATPS"
+        app:layout_constraintTop_toBottomOf="@+id/appleButton" />
+
+    <Button
+        android:id="@+id/buyFarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:text="PURCHASE"
+        android:enabled="false"
+        app:layout_constraintStart_toEndOf="@+id/buyAFPS"
+        app:layout_constraintTop_toBottomOf="@+id/buyTree" />
+
+    <Button
+        android:id="@+id/farmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:enabled="false"
+        android:text="AUTOMATE"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/buyAFPS"
+        app:layout_constraintTop_toBottomOf="@+id/buyTree" />
+
+    <TextView
+        android:id="@+id/atCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:text="$1000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/treeButton"
+        app:layout_constraintTop_toBottomOf="@+id/apsCost" />
+
+    <TextView
+        android:id="@+id/atpsCost"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:text="$10000"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/treeButton"
+        app:layout_constraintTop_toBottomOf="@+id/apsCost" />
+
+    <TextView
+        android:id="@+id/afpsCost"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:text="$100000"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/farmButton"
+        app:layout_constraintTop_toBottomOf="@+id/atpsCost" />
+
+    <TextView
+        android:id="@+id/afCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="$10000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/farmButton"
+        app:layout_constraintTop_toBottomOf="@+id/atpsCost" />
+
+</android.support.constraint.ConstraintLayout>

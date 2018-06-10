@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="121dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Apples: 0"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="165dp"
+        android:background="#ffffff"
+        android:text="Apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/appleUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="97dp"
+        android:background="#80ffff"
+        android:enabled="false"
+        android:text="Upgrade Apple"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/count" />
+
+    <Button
+        android:id="@+id/tree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:text="Apple Tree"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+    <Button
+        android:id="@+id/treeUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:background="#80ffff"
+        android:enabled="false"
+        android:text="Upgrade Tree"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+    <Button
+        android:id="@+id/farm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:text="Apple Farm"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree" />
+
+    <Button
+        android:id="@+id/farmUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:background="#80ffff"
+        android:enabled="false"
+        android:text="Upgrade Farm"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree" />
+
+
+    <!--<Button
+        android:id="@+id/tree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Apple Tree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+    <Button
+        android:id="@+id/farm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Apple Farm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree" />-->
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="SHOP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/count"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="91dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="DONE"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/upgrade"
+        android:layout_width="91dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="UPGRADE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/applesPerClick"
+        android:layout_width="58dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="27dp"
+        android:text="APC"
+        app:layout_constraintEnd_toStartOf="@+id/applesPerSecond"
+        app:layout_constraintStart_toEndOf="@+id/apple"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/applesPerSecond"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="APS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/applesPerClick"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="65dp"
+        android:text="Apples/click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/count" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="61dp"
+        android:text="Apples/sec"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/shop" />
+
+    <TextView
+        android:id="@+id/treesPerClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="73dp"
+        android:text="TPC"
+        app:layout_constraintStart_toEndOf="@+id/treeUpgrade"
+        app:layout_constraintTop_toBottomOf="@+id/applesPerClick" />
+
+    <TextView
+        android:id="@+id/treesPerSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="72dp"
+        android:text="TPS"
+        app:layout_constraintStart_toEndOf="@+id/treesPerClick"
+        app:layout_constraintTop_toBottomOf="@+id/applesPerSecond" />
+
+    <TextView
+        android:id="@+id/farmsPerClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="85dp"
+        android:text="FPC"
+        app:layout_constraintStart_toEndOf="@+id/farmUpgrade"
+        app:layout_constraintTop_toBottomOf="@+id/treesPerClick" />
+
+    <TextView
+        android:id="@+id/farmsPerSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="87dp"
+        android:text="FPS"
+        app:layout_constraintStart_toEndOf="@+id/farmsPerClick"
+        app:layout_constraintTop_toBottomOf="@+id/treesPerSecond" />
+
+</android.support.constraint.ConstraintLayout>
